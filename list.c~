@@ -43,8 +43,8 @@ list_t* reverse(list_t* head) {
 	}
 	list_t* new_head = tmp;
 	list_t* follow = new_head;
-	while(follow != head)
-	{
+	//while(follow != head)
+	//{
 		tmp = head;
 		while(tmp->next != follow)
 		{
@@ -52,7 +52,7 @@ list_t* reverse(list_t* head) {
 		}
 		follow->next = tmp;
 		follow = tmp;
-	}
+	//}
 	follow->next =NULL;			
 	return new_head;
 }
